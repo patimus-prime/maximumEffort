@@ -25,7 +25,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
       </Head>
 
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-        <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+        <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles withNormalizeCSS>
           <NotificationsProvider>
             <Component {...pageProps} />
           </NotificationsProvider>
@@ -35,6 +35,6 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   );
 }
 
-App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
-  colorScheme: getCookie('mantine-color-scheme', ctx) || 'light',
-});
+// App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
+//   colorScheme: getCookie('mantine-color-scheme', ctx) || 'light',
+// });
