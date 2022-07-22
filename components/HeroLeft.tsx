@@ -77,7 +77,7 @@ export function HeroContentLeft() {
       <Container className={classes.container}>
         <Title className={classes.title}>My dog deserves the best</Title>
         <Text className={classes.description} size="xl" mt="xl">
-          Including the best website – it's not done yet, but anyway, you can't rush perfection.
+          Including the best website – it's not done yet, but anyway, you can't rush perfection. TEST: God, ton, surh, ont, ubt
         </Text>
 
         <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
